@@ -9,17 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponenet = (function () {
-    function AppComponenet() {
+var Demons = (function () {
+    function Demons() {
     }
-    AppComponenet = __decorate([
+    return Demons;
+}());
+exports.Demons = Demons;
+var AppComponent = (function () {
+    function AppComponent() {
+        this.title = 'Bestest Smartest App';
+        this.demons = {
+            id: 1,
+            name: "Baal"
+        };
+    }
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>First Angular 2 App </h1>'
+            template: '<h1> {{title}} {{demons.id}} {{demons.name}} </h1>'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponenet);
-    return AppComponenet;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.AppComponenet = AppComponenet;
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
