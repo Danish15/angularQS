@@ -1,0 +1,7 @@
+<h1> {{title}} {{demon.id}} {{demon.name}} </h1>
+    <h2>My Demons</h2>
+        <ul class = "demons">
+            <li *ngFor = 'let d of Demons'>
+                <span class = "badge">{{d.id}} {{d.name}}</span>
+            </li>
+            </ul>
