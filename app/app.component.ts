@@ -13,11 +13,10 @@ export class Demon {
 
 export class AppComponent {
     title = 'Bestest Smartest App';
-    demon: Demon = {
-        id: 1,
-        name : "Baal"
-    };
+    selectedDemon: Demon;
     public Demons = DEMONS;
+    
+    onSelect (demon:Demon) {this.selectedDemon = demon;}
 }
 
 const DEMONS: Demon[] = [
