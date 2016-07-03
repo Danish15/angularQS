@@ -1,15 +1,13 @@
 import {Component} from '@angular/core';
 
-export class Demon {
-    id: number;
-    name : string;
-}
-
-
+import {Demon} from './demon';
+import {DemonDetailComponent} from './demon-detail.component';
 @Component({
     selector: 'my-app',
-    templateUrl : 'app/app.component.html'
+    templateUrl : 'app/app.component.html',
+    directives: [DemonDetailComponent]
     })
+
 
 export class AppComponent {
     title = 'Bestest Smartest App';
@@ -17,6 +15,7 @@ export class AppComponent {
     public Demons = DEMONS;
     
     onSelect (demon:Demon) {this.selectedDemon = demon;}
+    
 }
 
 const DEMONS: Demon[] = [
