@@ -1,19 +1,22 @@
-<h1> {{title}}  </h1>
-    <h2>My Demons</h2>
-        <ul class = "demons">
-            <li *ngFor = 'let d of Demons' 
-            [class.selected] = "d === selectedDemon"
-            (click) = "onSelect(d)">    
-                <span class = "badge">{{d.id}} </span> {{d.name}}
-            </li>
-            </ul>
+<h1> {{title}} </h1>
+<my-sidebar>
 
-    <div class= "demonDetails" *ngIf = "selectedDemon">
-        <h2> {{selectedDemon.name}} details! </h2>
-        <div><label>id:</label>{{selectedDemon.id}}</div>
-    
-    <div class= "inputDetails">  
+    <h2>aljdsjfjasdf</h2>
+
+</my-sidebar>
+<h2>My Demons</h2>
+<ul class="demons">
+    <li *ngFor='let d of Demons' [class.selected]="d === selectedDemon" (click)="onSelect(d)">
+        <span class="badge">{{d.id}} </span> {{d.name}}
+    </li>
+</ul>
+
+<div class="demonDetails" *ngIf="selectedDemon">
+    <h2> {{selectedDemon.name}} details! </h2>
+    <div><label>id:</label>{{selectedDemon.id}}</div>
+
+    <div class="inputDetails">
         <label>name:</label>
-        <input [(ngModel)] ="selectedDemon.name" placeholder ="name"/>
+        <input [(ngModel)]="selectedDemon.name" placeholder="name" />
     </div>
-    </div>
+</div>
