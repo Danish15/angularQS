@@ -8,14 +8,12 @@
             </li>
             </ul>
 
-    <div *ngIf = "selectedDemon">
+    <div class= "demonDetails" *ngIf = "selectedDemon">
         <h2> {{selectedDemon.name}} details! </h2>
         <div><label>id:</label>{{selectedDemon.id}}</div>
     
-    <div>  
+    <div class= "inputDetails">  
         <label>name:</label>
         <input [(ngModel)] ="selectedDemon.name" placeholder ="name"/>
     </div>
     </div>
-
-    <!--danish> 
