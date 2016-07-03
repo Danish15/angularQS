@@ -2,8 +2,8 @@
     <h2>My Demons</h2>
         <ul class = "demons">
             <li *ngFor = 'let d of Demons' 
-            [class.selected] = "demon === selectedDemon"
-            (click) = "onSelect(demon)">
+            [class.selected] = "d === selectedDemon"
+            (click) = "onSelect(d)">    
                 <span class = "badge">{{d.id}} </span> {{d.name}}
             </li>
             </ul>
@@ -12,8 +12,8 @@
         <h2> {{selectedDemon.name}} details! </h2>
         <div><label>id:</label>{{selectedDemon.id}}</div>
     
-    <div>
+    <div>  
         <label>name:</label>
-        <input> [(ngModel)] ="selectedDemon.name" placeholder ="name"/>
+        <input [(ngModel)] ="selectedDemon.name" placeholder ="name"/>
     </div>
     </div>
