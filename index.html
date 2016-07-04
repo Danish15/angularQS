@@ -1,25 +1,47 @@
 <html>
-    <head>
-        <title>Bestest, Smartest App </title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-             <link rel="stylesheet" href="styles.css">
-            <!-- 1. Load libraries -->
-            <!-- Polyfill(s) for older browsers -->
-            <script src="node_modules/core-js/client/shim.min.js"></script>
-            <script src="node_modules/zone.js/dist/zone.js"></script>
-            <script src="node_modules/reflect-metadata/Reflect.js"></script>
-            <script src="node_modules/systemjs/dist/system.src.js"></script>
-            <!-- 2. Configure SystemJS -->
-            <script src="systemjs.config.js"></script>
-            <script>
+
+<head>
+    <title>Bestest, Smartest App </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">   
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    
+    <script>
             System.import('app').catch(function(err){ console.error(err); });
             </script>
-    </head>
+
+
+</head>
+
 </html>
 
 <!-- The Application -->
+
 <body>
-        <my-app> Loading .. </my-app>
-      
+    <my-app> Loading .. </my-app>
+
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
 </body>
