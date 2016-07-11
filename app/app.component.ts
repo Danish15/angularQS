@@ -1,13 +1,14 @@
 import {Component} from '@angular/core';
-
 import {Demon} from './demon';
 import {DemonDetailComponent} from './demon-detail.component';
+import {NavBarComponent} from './navbar.component'
 import {SideBarComponent} from './sidebar.component'
+
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [DemonDetailComponent, SideBarComponent]
+    directives: [DemonDetailComponent, SideBarComponent, NavBarComponent]
 })
 
 
