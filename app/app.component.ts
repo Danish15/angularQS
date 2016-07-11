@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {Demon} from './demon';
 import {DemonDetailComponent} from './demon-detail.component';
-import {NavBarComponent} from './navbar.component'
-import {SideBarComponent} from './sidebar.component'
+import {NavBarComponent} from './navbar.component';
+import {SideBarComponent} from './sidebar.component';
 
 
 @Component({
