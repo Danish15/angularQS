@@ -3,12 +3,13 @@ import {Demon} from './demon';
 import {DemonDetailComponent} from './demon-detail.component';
 import {NavBarComponent} from './navbar.component';
 import {SideBarComponent} from './sidebar.component';
+import {FooterComponent} from './footer.component'
 
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [DemonDetailComponent, SideBarComponent, NavBarComponent]
+    directives: [DemonDetailComponent, SideBarComponent, NavBarComponent, FooterComponent]
 })
 
 
